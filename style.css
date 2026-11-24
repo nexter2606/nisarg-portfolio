@@ -582,6 +582,30 @@ strong {
   color: var(--accent);
 }
 
+.marketing-card {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.5fr;
+  align-items: center;
+  gap: 28px;
+  background: linear-gradient(120deg, rgba(52, 211, 153, 0.09), rgba(56, 189, 248, 0.06));
+  border-color: rgba(52, 211, 153, 0.2);
+}
+
+.marketing-kicker {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.marketing-card .card-desc {
+  margin-top: 0;
+}
+
 .tag-row {
   display: flex;
   flex-wrap: wrap;
@@ -1194,7 +1218,8 @@ strong {
   }
 
   .expertise-grid,
-  .contact-wrap {
+  .contact-wrap,
+  .marketing-card {
     grid-template-columns: 1fr;
   }
 
